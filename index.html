@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+      <title>Регистрация</title>
+      <link rel="stylesheet" type="text/css" href="reset.css" />
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/3e14bf8e35.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="image"></div>
+            <div class="form">
+                <form action="https://www.bit-by-bit.ru/form-submit">
+                    <h1>Регистрация</h1>
+                    <div class="section contact">
+                        <div class="contact__input input">
+                            <label class="label" for="firstName">Имя</label>
+                            <input class="input_border text_in" id="firstName" type="text" name="firstName"/>
+                        </div>
+                        <div class="contact__input input">
+                            <label class="label" for="lasttName">Фамилия</label>
+                            <input class="input_border text_in" id="lastName" type="text" name="lastName"/>
+                        </div>
+                        <div class="contact__input input">
+                            <label class="label" for="email">Email</label>
+                            <input class="input_border text_in" id="email" type="text" name="email"/>
+                        </div>
+                        <div class="contact__input input">
+                            <label class="label" for="phone">Телефон</label>
+                            <input class="input_border text_in" id="phone" type="text" name="phone"/>
+                        </div>
+                        
+                    </div>
+                    <h2>Адрес доставки</h2>
+                    <div class="section adress">
+                        <div class="adress__input input">
+                            <label class="label" for="country">Страна</label>
+                            <select class="input_border text_in" name="country">
+                                <option value="choice1">Россия</option>
+                                <option value="choice2">Китай</option>
+                                <option value="choice3">Италия</option>
+                                <option value="choice4">Мексика</option>
+                            </select>
+                        </div>
+                        
+                        <div class="adress__input input">
+                            <label class="label" for="city">Город</label>
+                            <input class="input_border text_in" type="text" name="city" id="city"/>
+                        </div>
+                        <div class="adress__input input">
+                            <label class="label" for="index">Почтовый индекс</label>
+                            <input class="input_border text_in" type="number" name="index" id="index"/>
+                            
+                        </div>
+                        <div class="adress__input input">
+                            <label class="label" for="city">Адрес доставки (улица, дом, квартира)</label>
+                            <input class="input_border text_in" type="text" name="address" id="address"/>
+                            
+                        </div>
+                    </div>
+                    <h2>Уведомлять об акциаях и скидках</h2>
+                    <p class="notification-text">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                    <div class="section">
+                        <div class="notification">
+                            <div class="notification__input-check">
+                                <input class=" text_in check_style" type="checkbox" id="contactCoice1" name="contacts" value="email"/>
+                                <label class="label notification_label" for="contactChoice1">По Email</label>
+                            </div>
+                            <div class="notification__input-check">
+                                <input class=" text_in check_style" type="checkbox" id="contactCoice2" name="contacts" value="sms"/>
+                                <label class="label notification_label" for="contactChoice2">По SMS</label>
+                            </div>
+                            
+                            <div class="notification__input-check">
+                                <input class=" text_in check_style" type="checkbox" id="contactCoice3" name="contacts" value="push"/>
+                                <label class="label" for="contactChoice3">Push-уведомления в приложении</label>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <button class="button" type="submit">Создать аккаунт</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
